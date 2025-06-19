@@ -1,7 +1,8 @@
 from flask import Flask
+import time
 
 app = Flask('app')
 
 @app.route('/')
 def home():
-  return 'Hello, world!'
+  return time.time()
